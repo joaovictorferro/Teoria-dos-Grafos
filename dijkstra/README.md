@@ -8,7 +8,7 @@ Para executar com a entrada:
 No Windows:
 
 > .\a.exe < in.txt
-> No Linux:
+No Linux:
 > ./a.out < in.txt
 
 Sobre a entrada:
