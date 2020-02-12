@@ -5,6 +5,7 @@ Na pasta do arquivo, run:
 > g++ dijkstra.cpp
 
 Para executar com a entrada:
+
 No Windows:
 
 > .\a.exe < in.txt
