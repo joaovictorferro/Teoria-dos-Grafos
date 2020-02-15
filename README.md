@@ -5,7 +5,7 @@
 -  William Philippe
 
 ### Grafos Escolhidos para implementação:
--[x] Bellman Ford
--[x] Dijkstra
--[x] Kruskal
--[x] Prim
+- [x] Bellman Ford
+- [x] Dijkstra
+- [x] Kruskal
+- [x] Prim
