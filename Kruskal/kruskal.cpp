@@ -3,7 +3,10 @@
 #include <algorithm>
 #include <string.h>
 #include <stdio.h>
+#include <fstream>
+
 using namespace std;
+//using std::ifstream;
 
 class ArestaGrafo{
     int primeiroVertice, segundoVertice, valorPeso;
@@ -91,16 +94,42 @@ public:
     }
 };
 
-int main(int argc, char *argv[]){
-    int w, k;
-    int init, final, valorPeso;
-    scanf("%d %d", &w, &k);
-    Grafo z(w);
+bool checkFileExistence(string filename) {
+    ifstream f(filename);
+    return f.is_open();
+}
 
-    for( int i = 0; i < k; i++){
-        scanf("%d %d %d", &init, &final, &valorPeso);
-        z.addArestaGrafo(init, final, valorPeso);
-   }
+bool getFile(int argc, char *argv[], ifstream& file) {   
+    
+    if (argc <= 1) {
+        cout << "Incorrect arguments." << endl;
+        return false;
+    } else if (!checkFileExistence(argv[1])) {
+        cout << "File " << argv[1] << " not found." << endl;
+        return false;
+    }
+
+    file.open(argv[1]);
+    return true;
+}
+
+int main(int argc, char *argv[]){
+    
+    int V,E,src,dest,weight; 
+    ifstream file;
+        if(!getFile(argc, argv, file)) {
+            exit(0);
+        }
+
+        file >> V;
+        file >> E;
+
+        Grafo z(V);
+
+        while(file >> src && file >> dest && file >> weight) {
+            z.addArestaGrafo(src, dest, weight);
+        }
+        file.close();
 
     z.algoritmoDeKruskal();
 
