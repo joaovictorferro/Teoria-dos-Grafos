@@ -1,11 +1,11 @@
 # Diciplina: Teoria-dos-Grafos
 ## Professor: Rian Gabriel Santos Pinheiro
 ### Equipe:
-### João Victor Ribeiro Ferro
-### William Philippe
+- João Victor Ribeiro Ferro
+-  William Philippe
 
 ### Grafos Escolhidos para implementação:
-### Bellman Ford
-### Dijkstra
-### Kruskal
-### Prim
+-[x] Bellman Ford
+-[x] Dijkstra
+-[x] Kruskal
+-[x] Prim
