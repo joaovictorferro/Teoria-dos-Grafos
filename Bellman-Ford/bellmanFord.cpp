@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+#include <iostream>
+
 #define lli long long int
 using namespace std;
 
@@ -29,7 +31,7 @@ bool bellmanFord()
   for (int u = 0; u < n; u ++){
     for (auto &v: graph[u]){
       if (dist[u] + v.second < dist[v.first]){
-        printf("Has negative cycle \n\n");
+         printf("Has negative cycle:\n\n");
         return(true);
       }
     }
@@ -41,14 +43,41 @@ bool bellmanFord()
   return(false);
 }
 
-int main()
+bool checkFileExistence(string filename) {
+    ifstream f(filename);
+    return f.is_open();
+}
+
+bool getFile(int argc, char *argv[], ifstream& file) {   
+    
+    if (argc <= 1) {
+        cout << "Incorrect arguments." << endl;
+        return false;
+    } else if (!checkFileExistence(argv[1])) {
+        cout << "File " << argv[1] << " not found." << endl;
+        return false;
+    }
+
+    file.open(argv[1]);
+    return true;
+}
+
+int main(int argc, char *argv[])
 {
-  scanf("%d %d", &n, &m);
-  for (int i = 0, u, v, c; i < m; i ++)
-  {
-    scanf("%d %d %d", &u, &v, &c);
-    graph[u].push_back({v, c});
-  }
+  int src,dest,weight;
+  
+  ifstream file;
+    if(!getFile(argc, argv, file)) {
+        exit(0);
+    }
+
+    file >> n;
+    file >> m;
+
+    while(file >> src && file >> dest && file >> weight) {
+      graph[src].push_back({dest, weight});
+    }
+    file.close();
 
   bellmanFord();
 
