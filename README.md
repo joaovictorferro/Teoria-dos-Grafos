@@ -15,7 +15,7 @@ Arquivo tem que esta nesse formato:
 5 4
 1 4 6
 ```
-Na primeira linha contém o número de Vertice e Aresta, 
+Na primeira linha contém o número de Vertice(V) e Aresta(E), 
 seguido por E aresta contendo cada aresta como:
 
 `vertex_src vertex_dest weight`
