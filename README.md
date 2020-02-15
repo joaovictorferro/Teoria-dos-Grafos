@@ -9,3 +9,12 @@
 - [x] Dijkstra
 - [x] Kruskal
 - [x] Prim
+
+Arquivo tem que esta nesse formato:
+```
+5 4
+1 4 6
+```
+Na primeira linha contém o número de Vertice e Aresta, 
+seguido por E aresta contendo cada aresta como:
+`vertex_src vertex_dest weight`
