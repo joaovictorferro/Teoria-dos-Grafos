@@ -1,4 +1,4 @@
-# Diciplina: Teoria-dos-Grafos
+# Disciplina: Teoria-dos-Grafos
 ## Professor: Rian Gabriel Santos Pinheiro
 ### Equipe:
 - João Victor Ribeiro Ferro
