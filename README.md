@@ -16,7 +16,7 @@ make bellmanFord
 make kruskal
 make dijkstra
 ```
-Depois vc seleciona o arquivo que queira executar dentro da pasta (exemplos):
+Depois você seleciona o arquivo que queira executar dentro da pasta (exemplos):
 ```
 ./bellmanFord exemplos/exBellman.txt
 ./kruskal exemplos/exKruskal.txt
@@ -29,7 +29,8 @@ Arquivo tem que esta nesse formato:
 5 4
 1 4 6
 ```
-Na primeira linha contém o número de Vertice (V) e Aresta (E), 
-seguido por E aresta contendo cada aresta como:
+Na primeira linha contém o número de Vertice (V) e Aresta (E)
+
+Seguido por E aresta contendo cada aresta como:
 
 `vertex_src vertex_dest weight`
