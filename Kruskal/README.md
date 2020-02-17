@@ -19,7 +19,7 @@ Primeira linha:
 
 Número de vértices e número de arestas
 
-Vértice src para dest e weight = custo.
+Vértice src para dest e weight.
 
 Resultado esperado, ou seja, a construção da árvore:
 
