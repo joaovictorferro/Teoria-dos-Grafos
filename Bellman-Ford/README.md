@@ -33,7 +33,11 @@ Resultado esperado:
 Distancia do Vertice para Fonte:
 
 0        0
+
 1        -1
+
 2        2
+
 3        -2
+
 4        1
