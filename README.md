@@ -10,23 +10,19 @@
 - [x] Kruskal
 - [x] Prim
 
-Para compilar o programa basta digitar:
-```
-make ?
-```
-Você subtitui a interrogação(?) pelo o algoritmo que queira executar exs:
+Para compilar o programa basta digitar o algoritmo que queira executar exs:
 ```
 make bellmanFord
 make kruskal
 make dijkstra
 ```
-Depois vc seleciona o arquivo que queira executar:
+Depois vc seleciona o arquivo que queira executar dentro da pasta (exemplos):
 ```
 ./bellmanFord exemplos/exBellman.txt
 ./kruskal exemplos/exKruskal.txt
 ./dijkstra exemplos/exDijkstra.txt
 ```
-Obs: caso queira executar outro exemplo, so criar um na pasta(exemplos) e fazer os passos acima
+Obs: caso queira executar outro exemplo, só criar um na pasta(exemplos) e fazer os passos acima
 
 Arquivo tem que esta nesse formato:
 ```
