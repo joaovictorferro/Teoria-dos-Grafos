@@ -4,7 +4,7 @@
 #define lli long long int
 using namespace std;
 
-const int maxN = 1e3, inf = 1e8; 
+const int maxN = 9999999, inf = 9999999; 
 int n, m;
 vector<pair<int, int>> graph[maxN];
 int source = 0, dist[maxN], prv[maxN];
@@ -31,7 +31,7 @@ bool bellmanFord()
   for (int u = 0; u < n; u ++){
     for (auto &v: graph[u]){
       if (dist[u] + v.second < dist[v.first]){
-         printf("Has negative cycle:\n\n");
+         printf("negative cycle\n\n");
         return(true);
       }
     }
