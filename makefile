@@ -3,7 +3,7 @@ KRUSKAL = "Kruskal/kruskal.cpp"
 DIJKSTRA = "Dijkstra/dijkstra.cpp"
 
 bellmanFord:
-	g++ 	$(BELLMAN_FORD)	 -o		bellman_ford
+	g++ 	$(BELLMAN_FORD)	 -o		bellmanFord
 
 kruskal:
 	g++ 	$(KRUSKAL)	 -o		kruskal
