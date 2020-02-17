@@ -1,18 +1,4 @@
-Para compilar o código:
-
-Na pasta do arquivo, run:
-
-> g++ dijkstra.cpp
-
-Para executar com a entrada:
-
-No Windows:
-
-> .\a.exe < in.txt
-
-No Linux:
-
-> ./a.out < in.txt
+#Dijkstra
 
 Sobre a entrada:
 
@@ -33,13 +19,11 @@ Sobre a entrada:
 
 Primeira linha:
 
-Número de vértices N (1-N) e número de arestas M
+Número de vértices e número de arestas
 
 Cada M linha:
 
-A B C
-
-Vértice A para B e B para A, C = custo.
+Vértice src para dest e dest para src, weight.
 
 Resultado esperado:
 
