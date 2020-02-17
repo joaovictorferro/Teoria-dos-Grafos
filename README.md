@@ -15,19 +15,21 @@ Para compilar o programa basta digitar o algoritmo que queira executar exs:
 make bellmanFord
 make kruskal
 make dijkstra
+make prim
 ```
 Depois você seleciona o arquivo que queira executar dentro da pasta (exemplos):
 ```
 ./bellmanFord exemplos/exBellman.txt
 ./kruskal exemplos/exKruskal.txt
 ./dijkstra exemplos/exDijkstra.txt
+./prim exemplos/exPrim.txt
 ```
 Obs: caso queira executar outro exemplo, só criar um na pasta(exemplos) e fazer os passos acima
 
 Arquivo tem que esta nesse formato:
 ```
 5 4
-1 4 6
+0 4 6
 ```
 Na primeira linha contém o número de Vertice (V) e Aresta (E)
 
