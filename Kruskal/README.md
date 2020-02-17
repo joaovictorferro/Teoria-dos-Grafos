@@ -22,6 +22,7 @@ Número de vértices e número de arestas
 Vértice src para dest e weight = custo.
 
 Resultado esperado, ou seja, a construção da árvore:
+
 (2, 3) = 4
 
 (0, 3) = 5
