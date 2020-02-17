@@ -6,7 +6,6 @@
 #include <fstream>
 
 using namespace std;
-//using std::ifstream;
 
 class ArestaGrafo{
     int primeiroVertice, segundoVertice, valorPeso;
@@ -82,15 +81,12 @@ public:
         }
 
         int size_arvore = arvore.size();
-        int resultado = 0;
 
         for(int i = 0; i < size_arvore; i++){
             int primeiroV = arvore[i].obterPrimeiroVertice();
             int segundoV = arvore[i].obterSegundoVertice();
             cout << "(" << primeiroV << ", " << segundoV << ") = " << arvore[i].obterValorPeso() << endl;
-	    resultado += arvore[i].obterValorPeso();
         }
-        cout << resultado << "\n\n\n";
     }
 };
 
