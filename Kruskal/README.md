@@ -28,3 +28,5 @@ Resultado esperado, ou seja, a construção da árvore:
 (0, 3) = 5
 
 (0, 1) = 10
+
+peso: 19
