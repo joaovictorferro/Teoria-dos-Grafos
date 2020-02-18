@@ -81,12 +81,15 @@ public:
         }
 
         int size_arvore = arvore.size();
+        int res = 0;
 
         for(int i = 0; i < size_arvore; i++){
+            res += arvore[i].obterValorPeso();
             int primeiroV = arvore[i].obterPrimeiroVertice();
             int segundoV = arvore[i].obterSegundoVertice();
             cout << "(" << primeiroV << ", " << segundoV << ") = " << arvore[i].obterValorPeso() << endl;
         }
+        cout << "peso: "<< res << endl;
     }
 };
 
