@@ -80,7 +80,7 @@ int main(int argc, char *argv[]){
     file.close();
   int mstCost = prim(0);
 
-  cout << mstCost;
+  cout << mstCost<< endl;
 
   return 0;
 }
